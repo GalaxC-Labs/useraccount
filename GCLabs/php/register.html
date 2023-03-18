@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script language="JavaScript" type="text/javascript" src="/js/register.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register form</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+   
+<div class="form-container">
+
+   <form id="frm" method="post">
+      <h3>register now</h3>
+      <?php include 'error.php'; ?>
+      <input type="text" id="name" name="name" required placeholder="enter your name">
+      <input type="email" id="email" name="email" required placeholder="enter your email">
+      <input type="password" id="password" name="password" required placeholder="enter your password">
+      <input type="password" name="cpassword" required placeholder="confirm your password">
+      <select id="user" name="user_type">
+         <option value="user">user</option>
+      </select>
+      <input type="submit" id="save" name="save" value="register now" class="form-btn">
+      <p>already have an account? <a href="login.php">login now</a></p>
+      
+   </form>
+</div>
+
+</body>
+</html>
